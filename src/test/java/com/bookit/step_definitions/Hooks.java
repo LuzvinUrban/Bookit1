@@ -15,6 +15,7 @@ public class Hooks {
 
 	@Before("@db")
 	public void dbHook() {
+
 		System.out.println("creating database connection");
 		DB_Util.createConnection();
 	}
